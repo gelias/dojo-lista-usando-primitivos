@@ -1,10 +1,5 @@
 package br.com.imed.lista;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
-import javax.jws.Oneway;
-
 public class ListaUsandoPrimitivo {
 
 	private Object[] listaPrimitiva;
@@ -52,5 +47,13 @@ public class ListaUsandoPrimitivo {
 		} catch (Exception e) {
 			return false;
 		}
+	}
+
+	public int tamanho() {
+		return this.listaPrimitiva.length;
+	}
+
+	public boolean isEmpty() {
+		return this.listaPrimitiva.length == 0;
 	}
 }
